@@ -4,3 +4,6 @@
 [submodule "src/Light-Condition-Style-Transfer"]
 	path = src/Light-Condition-Style-Transfer
 	url = https://github.com/NCTUyoung/Light-Condition-Style-Transfer.git
+[submodule "src/Codes-for-Lane-Detection"]
+	path = src/Codes-for-Lane-Detection
+	url = https://github.com/NCTUyoung/Codes-for-Lane-Detection.git
