@@ -1,0 +1,14 @@
+<launch>
+  <arg name="det_rate" default="3"/>
+  <arg name="image_src" default="/image_raw"/>
+  <arg name="planning_method" default="bezier_path"/>
+  <node pkg="lane_detect" name="lane_detect" type="light_condiction_style_transfer.py" output="screen">
+    <param name="image_src" type="str" value="$(arg image_src)"/>
+    <param name="det_rate" type="double" value="$(arg det_rate)"/>
+  </node>
+  <node pkg="lane_detect" name="lane_detect_curve" type="lane_curve_fit.py" output="screen">
+    <param name="image_src" type="str" value="$(arg image_src)"/>
+    <param name="image_src" type="str" value="$(arg image_src)"/>
+    <param name="image_src" type="str" value="$(arg image_src)"/>
+  </node>
+</launch>
